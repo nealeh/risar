@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RISAR</title>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container flex">
+    <div class="logo">
+      <picture>
+        <source srcset="images/logos/risar-logo-mobile.jpeg" media="(max-width: 768px)">
+        <img src="images/logos/risar-logo.jpeg" alt="Logo">
+      </picture>
+    </div>
+    <ul class="risar-menu">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- Hamburger menu for mobile -->
+    <button id="hamburger-button" class="hamburger-button">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </button>
+    <div class="mobile-menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="testimonials bg-dark">
+  <div class="container">
+    <div class="showcase-text">
+      <h1>Do it right first time</h1>
+      <p>Drawing on over 20 years of mechanical experience, RISAR Mechanical Services' no-nonsense
+        approach will see you right. We offer services in:</p>
+
+    </div>
+    <div class="testimonials-grid">
+      <div class="card">
+        <p>
+          Brakes
+        </p>
+        <img src="images/brakes.png" alt="">
+      </div>
+
+      <div class="card">
+        <p>
+          Tyres
+        </p>
+        <img src="images/tyres.png" alt="">
+      </div>
+
+      <div class="card">
+        <p>
+          Servicing & General Repair
+        </p>
+        <img src="images/servicing.jpeg" alt="">
+      </div>
+
+      <div class="card">
+        <p>
+          Trailers
+        </p>
+        <img src="images/trailer.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="container">
+
+    <div class="showcase-form card">
+      <h2>Contact us for a quote:</h2>
+      <form>
+        <div class="form-control">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+        </div>
+        <div class="form-control">
+          <label>Email
+            <input type="text" name="email" required>
+          </label>
+        </div>
+        <div class="form-control">
+          <label>Phone
+            <input type="tel" name="phone" required>
+          </label>
+        </div>
+        <div class="form-control">
+          <label>Registration
+            <input type="text" name="registration" required>
+          </label>
+        </div>
+        <div class="form-control">
+          <label>Query
+            <textarea name="query" type="text" cols="20" rows="4"
+                      required></textarea>
+          </label>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer bg-dark py-5">
+  <div class="container grid grid-3">
+    <div class="logo">
+      <div class="footer-logo">
+        <img src="images/logos/risar-logo-shield.png" class="inverted-logo" alt="">
+        <h3>RISAR Mechanical Services</h3>
+      </div>
+    </div>
+    <div>
+    </div>
+    <div class="location">
+      <ul>
+        <li>RISAR Mechanical Services</li>
+        <li>Unit 2</li>
+        <li>Toux Farm</li>
+        <li>Mintlaw</li>
+        <li>Peterhead</li>
+        <li>AB42 4LX</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
