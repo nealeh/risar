@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.navbar {
+  background-color: white;
+  color: #fff;
+  height: 70px;
+  border-bottom: 1px solid rgb(30, 46, 56);
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
+}
+
+.showcase {
+  height: 650px;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase-text {
+  margin: 20px;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-form {
+  top: 60px;
+  height: 620px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-content: center;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"],
+.showcase-form input[type="tel"],
+.showcase-form textarea[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.logo img {
+  height: 60px
+}
+.company-name, .risar-menu li a {
+  color: rgb(30, 46, 56);
+}
+
+.showcase-risar {
+  background-color: white;
+  color: rgb(30, 46, 56);
+}
+
+.testimonials {
+  padding: 40px 0;
+  color: white;
+  background-color: rgb(30, 46, 56);
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.testimonials img {
+  width: 225px;
+  height: 160px;
+  border-radius: 10%;
+}
+
+.testimonials .card p {
+  color: white;
+}
+
+.card {
+  color: #111;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+  padding: 50px;
+  background-color: rgb(30, 46, 56);
+}
+
+footer h1,
+footer h3,
+footer p,
+footer li,
+footer a {
+  color: white;
+}
+
+.card p {
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  padding-right: 5px;
+}
+
+
+
+.company i,
+.location i {
+  display: none;
+}
+
+/* Hamburger button */
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px;
+}
+
+.mobile-menu ul li {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1150px) {
+  .testimonials-grid{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+}
+
+@media (max-width: 1068px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+
+  .testimonials img {
+    width: 175px;
+    height: 130px;
+  }
+  .footer-logo {
+    display: block;
+    align-items: center;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1068px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: space-around;
+  }
+
+  .testimonials img {
+    width: 215px;
+    height: 150px;
+  }
+
+  .footer-logo {
+    display: block;
+    align-items: center;
+  }
+
+  .company,
+  .location {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .company i,
+  .location i {
+    padding-right: 5px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .navbar .risar-menu {
+    display: none;
+  }
+
+  .navbar .hamburger-button {
+    display: block;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar a {
+    color: black;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .testimonials img {
+    width: 215px;
+    height: 150px;
+  }
+
+  .testimonials-grid .card {
+    width: 75%;
+  }
+
+  .showcase-form {
+    justify-self: center;
+  }
+
+  .company,
+  .location {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .company i,
+  .location i {
+    padding-right: 5px;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .navbar .risar-menu {
+    display: none;
+  }
+
+  .grid,
+  .showcase,
+  .showcase-form,
+  .showcase .grid,
+  .testimonials-grid{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    width: auto;
+  }
+
+  .testimonials-grid .card {
+    margin: auto;
+  }
+
+  footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .company,
+  .location {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .company i,
+  .location i {
+    display: inline;
+    padding-right: 5px;
+  }
+
+}
